@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_ondraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="自定义View中onDraw方法"/>
+
+    <Button
+        android:id="@+id/bt_onHenCodePlus"
+        app:layout_constraintTop_toBottomOf="@id/bt_ondraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义图形方法"/>
+    <Button
+        android:id="@+id/bt_onPoint"
+        app:layout_constraintTop_toBottomOf="@id/bt_onHenCodePlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义文字方法"/>
+    <Button
+        android:id="@+id/bt_camera"
+        app:layout_constraintTop_toBottomOf="@id/bt_onPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="移动及Camera"/>
+    <Button
+        android:id="@+id/bt_ViewPropertyAnimation"
+        app:layout_constraintTop_toBottomOf="@id/bt_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画"/>
+
+</android.support.constraint.ConstraintLayout>
